@@ -1,0 +1,96 @@
+{
+  "name": "react-typescript-calendar-dayview",
+  "author": {
+    "name": "Marc-Antoine DUTOIT",
+    "url": "https://github.com/marcantoinedutoit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcantoinedutoit/react-typescript-calendar-dayview.git"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.16",
+    "@heroicons/react": "^2.0.18",
+    "@types/node": "^16.18.39",
+    "@types/react-dom": "^18.2.7",
+    "add": "^2.0.6",
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
+    "eslint-config-prettier": "^8.8.0",
+    "identity-obj-proxy": "^3.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "private": false,
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "jest ./src/__tests__",
+    "check-types": "tsc --noEmit --project tsconfig.json",
+    "prepare": "husky install",
+    "coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "lint:ci": "eslint src/ --format junit --output-file ./reports/eslint.xml",
+    "prettify": "prettier \"src/**/*.{js,ts,tsx,jsx,css,graphql}\" --write --log-level=warn",
+    "prettify:check": "prettier \"src/**/*.{js,ts,tsx,jsx,css,graphql}\" --check --log-level=warn",
+    "lp": "pnpm lint --fix && pnpm prettify"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/react": "^18.2.17",
+    "@types/testing-library__jest-dom": "^5.14.9",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.1",
+    "postcss": "^8.4.27",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^3.3.3",
+    "ts-jest": "^29.1.1",
+    "vite": "^4.4.7",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}
