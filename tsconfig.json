@@ -21,39 +21,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
-    "paths": {
-      "assets/*": [
-        "assets/*"
-      ],
-      "datas/*": [
-        "datas/*"
-      ],
-      "features/*": [
-        "features/*"
-      ],
-      "hooks/*": [
-        "hooks/*"
-      ],
-      "models/*": [
-        "models/*"
-      ],
-      "pages/*": [
-        "pages/*"
-      ],
-      "routes/*": [
-        "routes/*"
-      ],
-      "store/*": [
-        "store/*"
-      ],
-      "types/*": [
-        "types/*"
-      ],
-      "utils/*": [
-        "utils/*"
-      ],
-    }
   },
   "include": [
     "src"
